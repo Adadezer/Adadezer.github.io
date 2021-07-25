@@ -4,51 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
     <title>Portifólio Adadezer</title>
-
-    <style>
-        @font-face {
-                font-family:dosis;
-                src: url(dosis.ttf);
-            }
-        body{
-            font-family: dosis;
-            font-size:x-large;
-            color: #c4c4c4;
-            background-color: #1b4332;
-        }
-
-        a{
-            color: #c4c4c4;
-            text-decoration: none;
-        }
-    </style>
 </head>
 
 <body>
-    <h2>Índice</h2>
-    <ul>
-        <li><a href="#eu">Sobre mim</a></li>
+    <!-- INDICE -->
+    <ul id="indice">
+        <li><a href="#nome">Sobre mim</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
         <li><a href="#blogs">Blogs</a></li>
     </ul>
 
-    <hr>
 
-    <h1 id="eu">Adadezer Suhita Iwazaki</h1>
-    <img src="images/headset.jpg" alt="foto adadezer usando um headset" width="200px">
-    <p>
-        Olá! Me chamo <strong>Adadezer</strong>, sou Brasileiro, moro na cidade de <strong>Mauá - SP</strong>, localizado no Grande ABC Paulista
-    </p>
+    <!-- SOBRE -->
+    <div class="sobreMim">
 
-    <p>
-        Adoro música, sou <em>bateirista</em>, e atualmente sou <strong>Estudante de Desenvolvimento Web na Trybe</strong>
-    </p>
+        <h1 id="nome">Adadezer Suhita Iwazaki</h1>
+        
+        <img class="foto" src="images/headset.jpg" alt="foto adadezer usando um headset" width="200px">
 
-    <hr>
+        <div id="descricao">
+            <p>
+                Olá! Me chamo <strong>Adadezer</strong>, sou Brasileiro, moro na cidade de <strong>Mauá - SP</strong>, localizado no Grande ABC Paulista
+            </p>
+    
+            <p>
+                Adoro música, sou <em>bateirista</em>, e atualmente sou <strong>Estudante de Desenvolvimento Web na Trybe</strong>
+            </p>
+        </div>
+    </div>
 
+    <!-- HABILIDADES -->
     <h3 id="habilidades">Habilidades</h3>
-    <ul>
+    <ul class="habilidades">
         <li>Unix & Bash</li>
         <li>Git,GitHub</li>
         <li>HTML</li>
@@ -56,18 +47,24 @@
         <li>Materialize e Bootstrap</li>
     </ul>
 
-    <hr>
+    <!-- BLOGS -->
+    <div class="blogs">
+        <h3 id="blogs">Blogs</h3>
+        <ul>
+            <li>
+                <a href="https://github.com/Adadezer" target="_blank">GitHub</a>
+            </li>
+            <li>
+                <a href="https://blog.betrybe.com/" target="_blank">blog da Trybe</a>
+            </li>
+        </ul>
+    </div>
 
-    <h3 id="blogs">Blogs</h3>
-    <ul>
+<!-- LINK FOTO -->
+    <ul class="link-foto">
         <li>
-            <a href="https://github.com/Adadezer" target="_blank">GitHub</a>
-        </li>
-        <li>
-            <a href="https://blog.betrybe.com/" target="_blank">blog da Trybe</a>
+            <a href="images/headset.jpg">Esse sou eu!</a>
         </li>
     </ul>
-
-    <a href="images/headset.jpg"><strong>Esse sou eu!</strong></a>
 </body>
 </html>

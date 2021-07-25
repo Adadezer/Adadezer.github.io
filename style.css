@@ -1,0 +1,81 @@
+@font-face {
+    font-family:dosis;
+    src: url(dosis.ttf);
+}
+
+body{
+    font-family: dosis;
+    font-size:x-large;
+    color: #c4c4c4;
+    background-color: #1a4734;
+}
+
+/* INDICE */
+ul#indice li{
+    display: inline-block;
+    margin-right: 100px;
+}
+
+a{
+    color: #c4c4c4;
+    text-decoration: none;
+}
+
+
+/* SOBRE */
+.sobreMim{
+    background-color: #123327;
+    height: 450px;
+}
+
+#nome{
+    text-align: center;
+}
+
+#descricao{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.foto{
+    float: right;
+    background-color: #c4c4c4;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+
+/* HABILIDADES */
+h3{ 
+    text-align: center;
+    margin-left: 30px; /* alinha os titulos habilidade e blogs */
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+ul li a:hover{
+    font-weight: bold;
+}
+
+ul.habilidades li:nth-of-type(2n+1){
+    background-color: #1d4d39;
+    margin-right: 30px; /* alinha margem direita pro background ficar igual o da esquerda, ja q a lista deixa uma margem d esquerda faltando */
+}
+
+ul.habilidades li:nth-of-type(2n){
+    margin-right: 30px; /* alinha os li por causa do background dos números pares */
+}
+
+/* BLOGS */
+.blogs{
+    background-color: #123327;
+    padding: 10px;
+}
+
+/* LINK FOTO */
+ul.link-foto{
+    font-size:medium;
+}
